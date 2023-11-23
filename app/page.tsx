@@ -1,113 +1,90 @@
+import { ModeToggle } from '@/components/dark-mode'
 import Image from 'next/image'
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+import Navbar from '@/components/navbar'
+import { Button } from '@/components/ui/button';
+import Certificate from '@/components/certificate';
+import Contact from '@/components/contact';
+import Footer from '@/components/footer';
+import About from '@/components/about';
+import Project from '@/components/project';
+import TechStack from '@/components/tech';
 
 export default function Home() {
+  const polygonPoints = "73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%";
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      {/* <header className="bg-opacity-80 backdrop-blur-lg py-4">
+        <div className="container mx-auto flex justify-between items-center">
+          <div className="text-2xl font-semibold">Mis Arianto</div>
+
+          <nav>
+            <ul className="flex space-x-6">
+              <li className="h-12"><a href="#">Home</a></li>
+              <li className="h-12"><a href="#">Certificate</a></li>
+              <li className="h-12"><a href="#">Projects</a></li>
+              <li className="h-12"><a href="#">About</a></li>
+              <li className="h-12"><a href="#">Contact</a></li>
+              <li className="h-12">
+                <ModeToggle />
+              </li>
+            </ul>
+          </nav>
+
         </div>
+      </header> */}
+      <Navbar />
+      <div className="absolute flex transform-gpu justify-center overflow-hidden blur-3xl" aria-hidden="true">
+        <div className="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-yellow-600 to-yellow-500 opacity-25 dark:block" style={{ clipPath: `polygon(${polygonPoints})` }}></div>
       </div>
+      <section className="pb-5 px-36">
+        <div className="relative container px-4 pt-12 md:pt-20 mx-auto">
+          <div className="flex flex-wrap items-center -mx-4 mb-20 2xl:mb-14">
+            <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
+              <span className="text-lg font-bold text-primary">Assalamu'alaikum wr.wb</span>
+              {/* <h2 className="max-w-2xl mt-5 mb-5 text-6xl 2xl:text-8xl  font-bold font-heading">"Temukan <span className="inline-block -rotate-1 animate-gradient-pulse rounded-xl ring-2 ring-primary/70 shadow-2xl shadow-primary/[0.25] ml-1 bg-gradient-to-r from-background via-primary/10 to-background px-4 py-1.5 text-lg tracking-tight text-foreground sm:px-4 sm:py-3 sm:text-3xl lg:text-4xl">Bakat Terbaik</span> kamu hingga ke titik maksimal"</h2> */}
+              <h2 className="max-w-2xl mt-5 mb-5 text-6xl 2xl:text-8xl  font-bold font-heading">"Find your <span className="inline-block -rotate-1 animate-gradient-pulse rounded-xl ring-2 ring-primary/70 shadow-2xl shadow-primary/[0.25] ml-1 bg-gradient-to-r from-background via-primary/10 to-background px-4 py-1.5 text-lg tracking-tight text-foreground sm:px-4 sm:py-3 sm:text-3xl lg:text-4xl">Best Talent</span> to the maximum point"</h2>
+              <p className="mb-12 lg:mb-16 2xl:mb-24 text-xl text-gray-100">Selalu bersyukur atas apa yang kita raih hari ini</p>
+              <a className="inline-block px-12 py-3 text-lg font-bold bg-primary-foreground hover:bg-primary-foreground text-white border border-spacing-10 border-primary rounded-full transition duration-200" href="#">About</a>
+            </div><div className="w-full lg:w-1/2 px-4">
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+              <img className="w-full" src="/me.png" alt="" /></div>
+          </div>
+          <div className="max-w-4xl mx-auto -mb-12 flex flex-wrap items-center justify-center">
+            <div className="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-12">
+              <img className="h-8 mx-auto" src="zospace-assets/logos/brands/nike.svg" alt="" />
+            </div>
+            <div className="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-12">
+              <img className="h-8 mx-auto" src="zospace-assets/logos/brands/marvel.svg" alt="" />
+            </div>
+            <div className="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-12">
+              <img className="h-8 mx-auto" src="zospace-assets/logos/brands/airbnb.svg" alt="" />
+            </div>
+            <div className="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-12">
+              <img className="h-8 mx-auto" src="zospace-assets/logos/brands/facebook.svg" alt="" />
+            </div>
+            <div className="w-1/2 md:w-1/3 lg:w-1/5 px-2 mb-12">
+              <img className="h-8 mx-auto" src="zospace-assets/logos/brands/tesla.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <About />
+      <TechStack />
+      <Certificate />
+      <Project />
+      <Contact />
+      <Footer />
+    </>
   )
 }
