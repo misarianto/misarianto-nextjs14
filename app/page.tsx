@@ -51,9 +51,9 @@ export default function Home() {
         <div className="relative container px-4 pt-12 md:pt-20 mx-auto">
           <div className="flex flex-wrap items-center -mx-4 mb-20 2xl:mb-14">
             <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
-              <span className="text-lg font-bold text-primary">Assalamu'alaikum wr.wb</span>
+              <span className="text-lg font-bold text-primary">Assalamu&apos;alaikum wr.wb</span>
               {/* <h2 className="max-w-2xl mt-5 mb-5 text-6xl 2xl:text-8xl  font-bold font-heading">"Temukan <span className="inline-block -rotate-1 animate-gradient-pulse rounded-xl ring-2 ring-primary/70 shadow-2xl shadow-primary/[0.25] ml-1 bg-gradient-to-r from-background via-primary/10 to-background px-4 py-1.5 text-lg tracking-tight text-foreground sm:px-4 sm:py-3 sm:text-3xl lg:text-4xl">Bakat Terbaik</span> kamu hingga ke titik maksimal"</h2> */}
-              <h2 className="max-w-2xl mt-5 mb-5 text-6xl 2xl:text-8xl  font-bold font-heading">"Find your <span className="inline-block -rotate-1 animate-gradient-pulse rounded-xl ring-2 ring-primary/70 shadow-2xl shadow-primary/[0.25] ml-1 bg-gradient-to-r from-background via-primary/10 to-background px-4 py-1.5 text-lg tracking-tight text-foreground sm:px-4 sm:py-3 sm:text-3xl lg:text-4xl">Best Talent</span> to the maximum point"</h2>
+              <h2 className="max-w-2xl mt-5 mb-5 text-6xl 2xl:text-8xl  font-bold font-heading">&quot;Find your <span className="inline-block -rotate-1 animate-gradient-pulse rounded-xl ring-2 ring-primary/70 shadow-2xl shadow-primary/[0.25] ml-1 bg-gradient-to-r from-background via-primary/10 to-background px-4 py-1.5 text-lg tracking-tight text-foreground sm:px-4 sm:py-3 sm:text-3xl lg:text-4xl">Best Talent</span> to the maximum point&quot;</h2>
               <p className="mb-12 lg:mb-16 2xl:mb-24 text-xl text-gray-100">Selalu bersyukur atas apa yang kita raih hari ini</p>
               <a className="inline-block px-12 py-3 text-lg font-bold bg-primary-foreground hover:bg-primary-foreground text-white border border-spacing-10 border-primary rounded-full transition duration-200" href="#">About</a>
             </div><div className="w-full lg:w-1/2 px-4">

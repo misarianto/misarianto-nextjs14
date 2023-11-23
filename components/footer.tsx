@@ -5,7 +5,7 @@ export default function Footer() {
             <div className="relative container px-4 mx-auto">
                 <div className="max-w-3xl mb-24 sm:mb-52 pr-8 sm:pr-0">
                     <h1 className="font-heading text-4xl xs:text-5xl md:text-6xl font-semibold text-white mb-20">
-                        <span>Join &amp; Let's Build</span>
+                        <span>Join &amp; Let&apos;s Build</span>
                         <span className="font-serif italic">Magnificent</span>
                         <span>Products</span>
                     </h1>
