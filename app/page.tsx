@@ -83,7 +83,7 @@ export default function Home() {
       <TechStack />
       <Certificate />
       <Project />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   )

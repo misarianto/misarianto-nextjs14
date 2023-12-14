@@ -18,7 +18,7 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-interface ProjectType {
+interface CertificateType {
     title: string;
     href: string;
     gambar: string;
@@ -26,7 +26,7 @@ interface ProjectType {
 }
 
 
-export default function CardProject(props: ProjectType) {
+export default function CardProject(props: CertificateType) {
 
     const { title, href, gambar, description } = props
 
@@ -58,7 +58,7 @@ export default function CardProject(props: ProjectType) {
             </DialogTrigger>
             <DialogContent className="sm:max-w-[800px] h-[600px] overflow-y-auto">
             <Image className="block w-full border border-spacing-10 border-primary rounded-lg" src={gambar} width={800} height={800} loading="lazy" alt="" />
-            <h6 className="text-xl text-primary-foreground dark:text-primary font-bold mb-1">{title}</h6>
+            <h6 className="text-xl text-primary-foreground dark:text-primary font-bold mb-1"> {description}</h6>
             </DialogContent>
         </Dialog>
 

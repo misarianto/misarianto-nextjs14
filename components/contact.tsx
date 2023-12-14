@@ -20,7 +20,7 @@ export default function Contact() {
                 <img className="block mx-auto mb-3" src="/icon-orange-email.svg" alt="" />
                 <h5 className="text-2xl font-bold text-gray-900 mb-3">Contact Us</h5>
                 <p className="text-gray-500 mb-3">Contact us to seek help from us, we will help you as soon as possible</p>
-                <span className="block text-sm text-orange-900 mb-8">hello@yourdomain.com</span>
+                <span className="block text-sm text-orange-900 mb-8">Mis Arianto</span>
                 <a className="relative group inline-block py-4 px-6 text-white font-semibold bg-orange-900 rounded-full overflow-hidden" href="#">
                   <div className="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
                   <div className="relative flex items-center justify-center">
@@ -41,7 +41,7 @@ export default function Contact() {
                 <img className="block mx-auto mb-3" src="/icon-orange-headphones.svg" alt="" />
                 <h5 className="text-2xl font-bold text-gray-900 mb-3">Customer Service</h5>
                 <p className="text-gray-500 mb-3">Contact us to seek help from us, we will help you as soon as possible</p>
-                <span className="block text-sm text-orange-900 mb-8">+08 128 903427</span>
+                <span className="block text-sm text-orange-900 mb-8">+08</span>
                 <a className="relative group inline-block py-4 px-6 text-white font-semibold bg-orange-900 rounded-full overflow-hidden" href="#">
                   <div className="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"></div>
                   <div className="relative flex items-center justify-center">
