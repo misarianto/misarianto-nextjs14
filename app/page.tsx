@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import About from "@/components/about";
 import Project from "@/components/project";
 import TechStack from "@/components/tech";
+import ScrollToTopButton from "@/components/scroll-to-top-button";
 
 export default function Home() {
   const polygonPoints =
@@ -52,7 +53,7 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <section className="pb-5 px-4 md:px-8 lg:px-12 xl:px-36 mt-32">
+      <section className="pb-5 px-4 md:px-8 lg:px-12 xl:px-36 mt-20">
         <div className="relative container mx-auto">
           <div className="flex flex-wrap items-center -mx-4 mb-10 md:mb-20 2xl:mb-14">
             <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
@@ -66,7 +67,7 @@ export default function Home() {
                 </span>&nbsp;
                 to the maximum point&quot;
               </h2>
-              <p className="mb-6 md:mb-10 lg:mb-12 2xl:mb-16 text-base md:text-lg lg:text-xl text-gray-100">
+              <p className="mb-6 md:mb-10 lg:mb-12 2xl:mb-16 text-base md:text-lg lg:text-x">
                 Selalu bersyukur atas apa yang kita raih hari ini
               </p>
               <a
@@ -125,6 +126,8 @@ export default function Home() {
       <Certificate />
       <Project />
       <Footer />
+
+      <ScrollToTopButton />
     </>
   );
 }
